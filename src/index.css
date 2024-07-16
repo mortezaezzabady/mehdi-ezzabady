@@ -73,3 +73,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+[data-radix-scroll-area-viewport] > div {
+  height: 100%;
+}
