@@ -14,7 +14,7 @@ const resources = {
   fa: {
     translation: {
       "in-memory-of": "به یاد",
-      "mehdi-ezzabady": "سید مهدی کمال الدینی عزابادی",
+      "mehdi-ezzabady": "سید مهدی کمال الدینی عزآبادی",
     },
   },
 };
