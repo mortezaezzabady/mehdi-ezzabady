@@ -47,12 +47,12 @@ interface TimelineEntry {
 
 const timelineEntries: TimelineEntry[] = [
   {
-    title: "testtetete",
-    date: "yo",
+    title: "مرگ",
+    date: "۱۵ تیر ۱۴۰۳",
     media: [],
     tag: [],
     description: "ola",
-    location: "Yazd",
+    location: "یزد",
   },
   {
     title: "test2",
