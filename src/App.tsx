@@ -120,7 +120,7 @@ function TimelineItem({
   isEnd: boolean;
   entry: TimelineEntry;
 }) {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const lang: "en" | "fa" = i18n.language == "en" ? "en" : "fa";
   return (
     <div className="flex flex-row items-center justify-center w-fit gap-0">
