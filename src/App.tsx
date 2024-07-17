@@ -36,72 +36,77 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+interface TranslatableString {
+  en: string;
+  fa: string;
+}
+
 interface TimelineEntry {
-  title: string;
-  date: string;
+  title: TranslatableString;
+  date: TranslatableString;
   media: string[];
-  tag: string[];
-  description: string;
-  location?: string;
+  tag: TranslatableString[];
+  description: TranslatableString;
+  location?: TranslatableString;
 }
 
 const timelineEntries: TimelineEntry[] = [
   {
-    title: "مرگ",
-    date: "۱۵ تیر ۱۴۰۳",
+    title: { en: "Death", fa: "مرگ" },
+    date: { en: "میلادیشو بذار", fa: "۱۵ تیر ۱۴۰۳" },
     media: [],
     tag: [],
-    description: "ola",
-    location: "یزد",
+    description: { en: "ola", fa: "اولا" },
+    location: { en: "Yazd", fa: "یزد" },
   },
-  {
-    title: "ازدواج",
-    date: "۵ دی ۱۳۶۴",
-    media: [],
-    tag: [],
-    description: "ola",
-    location: "اردکان",
-  },
-  {
-    title: "دکترا از University of Texas at Arlington",
-    date: "۱۳۵۵",
-    media: [],
-    tag: [],
-    description: "ola",
-    location: "آمریکا",
-  },
-  {
-    title: "فوق لیسانس از دانشگاه پلی تکنیک",
-    date: "۱۳۵۲",
-    media: [],
-    tag: [],
-    description: "ola",
-    location: "تهران",
-  },
-  {
-    title: "لیسانس از دانشگاه آریامهر",
-    date: "۱۳۵۰",
-    media: [],
-    tag: [],
-    description: "ola",
-    location: "تهران",
-  },
-  {
-    title: "دیپلم از دبیرستان ایرانشهر",
-    date: "۱۳۴۶",
-    media: [],
-    tag: [],
-    description: "ola",
-    location: "یزد",
-  },
-  {
-    title: "زادروز",
-    date: "۱۷ مهر ۱۳۲۸",
-    media: [],
-    tag: [],
-    description: "ola",
-    location: "یزد",
-  },
+  // {
+  //   title: "ازدواج",
+  //   date: "۵ دی ۱۳۶۴",
+  //   media: [],
+  //   tag: [],
+  //   description: "ola",
+  //   location: "اردکان",
+  // },
+  // {
+  //   title: "دکترا از University of Texas at Arlington",
+  //   date: "۱۳۵۵",
+  //   media: [],
+  //   tag: [],
+  //   description: "ola",
+  //   location: "آمریکا",
+  // },
+  // {
+  //   title: "فوق لیسانس از دانشگاه پلی تکنیک",
+  //   date: "۱۳۵۲",
+  //   media: [],
+  //   tag: [],
+  //   description: "ola",
+  //   location: "تهران",
+  // },
+  // {
+  //   title: "لیسانس از دانشگاه آریامهر",
+  //   date: "۱۳۵۰",
+  //   media: [],
+  //   tag: [],
+  //   description: "ola",
+  //   location: "تهران",
+  // },
+  // {
+  //   title: "دیپلم از دبیرستان ایرانشهر",
+  //   date: "۱۳۴۶",
+  //   media: [],
+  //   tag: [],
+  //   description: "ola",
+  //   location: "یزد",
+  // },
+  // {
+  //   title: "زادروز",
+  //   date: "۱۷ مهر ۱۳۲۸",
+  //   media: [],
+  //   tag: [],
+  //   description: "ola",
+  //   location: "یزد",
+  // },
 ];
 
 function TimelineItem({
@@ -113,6 +118,8 @@ function TimelineItem({
   isEnd: boolean;
   entry: TimelineEntry;
 }) {
+  const { t, i18n } = useTranslation();
+  const lang: "en" | "fa" = i18n.language == "en" ? "en" : "fa";
   return (
     <div className="flex flex-row items-center justify-center w-fit gap-0">
       {!isStart && <span className="h-1 w-[calc(100svw/5)] bg-muted"></span>}
@@ -135,12 +142,14 @@ function TimelineItem({
           <DrawerContent>
             <div className="mx-auto w-full max-w-sm">
               <DrawerHeader>
-                <DrawerTitle className="text-start">{entry.title}</DrawerTitle>
+                <DrawerTitle className="text-start">
+                  {entry.title[lang]}
+                </DrawerTitle>
                 <DrawerDescription className="text-start">
-                  {entry.date}
+                  {entry.date[lang]}
                 </DrawerDescription>
                 <DrawerDescription className="text-start">
-                  {entry.location}
+                  {(entry.location ?? { en: "", fa: "" })[lang]}
                 </DrawerDescription>
               </DrawerHeader>
               <div className="w-full px-14">
@@ -171,17 +180,17 @@ function TimelineItem({
         <div className="flex flex-col absolute top-5 start-1/2 translate-x-[50%] items-center justify-center">
           <div className="overflow-visible flex flex-row items-center justify-center">
             <button className="block w-24 md:w-36 text-center break-words text-sm md:text-md">
-              {entry.title}
+              {entry.title[lang]}
             </button>
           </div>
           <div className="overflow-visible flex flex-row items-center justify-center">
             <button className="block w-24 md:w-36 text-center break-words text-xs md:text-sm">
-              {entry.date}
+              {entry.date[lang]}
             </button>
           </div>
           <div className="overflow-visible flex flex-row items-center justify-center ">
             <button className="block w-24 md:w-36 text-center break-words text-xs md:text-sm text-muted-foreground">
-              {entry.location}
+              {(entry.location ?? { en: "", fa: "" })[lang]}
             </button>
           </div>
         </div>
