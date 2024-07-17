@@ -48,6 +48,7 @@ interface TimelineEntry {
   tag: TranslatableString[];
   description: TranslatableString;
   location?: TranslatableString;
+  distanceFromPrevious: number;
 }
 
 const timelineEntries: TimelineEntry[] = [
@@ -58,6 +59,7 @@ const timelineEntries: TimelineEntry[] = [
     tag: [],
     description: { en: "ola", fa: "اولا" },
     location: { en: "Yazd", fa: "یزد" },
+    distanceFromPrevious: 1.0,
   },
   // {
   //   title: "ازدواج",
