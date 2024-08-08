@@ -1,3 +1,3 @@
 export default function BiographyFa() {
-  return <></>;
+  return <div className="text-center">به زودی</div>;
 }

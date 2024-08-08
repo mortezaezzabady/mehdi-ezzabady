@@ -1,3 +1,3 @@
 export default function BiographyEn() {
-  return <></>;
+  return <div className="text-center">Soon</div>;
 }
