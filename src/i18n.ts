@@ -9,12 +9,20 @@ const resources = {
     translation: {
       "in-memory-of": "In Memory of",
       "mehdi-ezzabady": "Seyed Mehdi Kamaladdini Ezzabady",
+      timeline: "Timeline",
+      location: "Location",
+      bio: "Biography",
+      loading: "Loading...",
     },
   },
   fa: {
     translation: {
       "in-memory-of": "به یاد",
       "mehdi-ezzabady": "سید مهدی کمال الدینی عزآبادی",
+      timeline: "تایم لاین",
+      location: "آرامگاه",
+      bio: "بیوگرافی",
+      loading: "در حال بارگذاری...",
     },
   },
 };
