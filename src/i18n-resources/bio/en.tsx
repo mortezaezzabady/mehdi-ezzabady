@@ -1,30 +1,30 @@
 export default function BiographyEn() {
   return <div className="text-center">Seyed Mehdi Kamaladdini Ezzabady was born on October 9, 1949, in Yazd, Iran, the first child of Mostafa (affectionately known as "Agha Makki") and Zinat. He was a descendant of Sayyed Rukn ad-Din, a renowned cleric and scholar who served as the chief Qadi of Yazd in the 14th century. From an early age, Mehdi demonstrated exceptional intelligence and excelled academically, particularly in mathematics and physics, graduating as a top student from Iranshahr High School. Accepted into several prestigious Iranian universities, he attended Aryamehr University of Technology (now Sharif University of Technology) in 1967, earning his Bachelor’s degree in Mechanical Engineering.
-
+  <br />
   Following his undergraduate studies, Mehdi served in the Development and Prosperity Corps (1971-1973), designing, supervising, and executing numerous urban and rural construction projects. Subsequently, he joined the National Iranian Oil Company, making significant contributions as a Pipeline Design Engineer. He furthered his education at Tehran Polytechnic (now Amirkabir University of Technology), where he earned his Master's degree in Mechanical Engineering in 1975.
-  
+  <br />
   In 1976, Mehdi traveled to the United States to pursue a PhD in Applied Mechanics at the University of Texas at Arlington, simultaneously working at Bell Helicopter as a Facilities Specialist. In 1977, he returned to Iran for a brief visit but was unable to go back to the United States due to circumstances beyond his control, leaving his doctoral studies incomplete. He continued his professional career at Iran Aircraft Manufacturing Industries Corporation in Isfahan during this period.
-  
+  <br />
   Throughout his life, Mehdi was a prolific inventor and dedicated researcher, creating a total of 138 inventions and ideas, with a handful of them patented. His innovations profoundly impacted Iran's industrial landscape despite persistent challenges and limited institutional support, he achieved remarkable successes. In 1990, he received his first Khwarizmi Award for inventing the "Automatic Aerodynamic Separator," significantly enhancing Iran’s dried-fruit processing industry, notably pistachios, by preventing aflatoxin contamination and facilitating exports to European markets. Although his invention greatly benefited Iran's economy, he received little recognition in return.
-  
+  <br />
   His inventive spirit continued with the creation of the "Multipurpose Hydropneumatics System," which garnered multiple accolades, including the 10th International Khwarizmi Award (1997), the 2nd National Iranian Oil, Gas & Petrochemical Industries Award (1998), and recognition from the International Federation of Inventors Associations (IFIA). This system was also honored at the National Exhibition on Water, Soil, and Environmental Technologies (2015) and the First National Conference of Water Technologies (2017).
-  
+  <br />
   In 1999, he earned his third Khwarizmi Award for inventing a "Bicycle Gear Shifting System Equipped with a Changeable Diameter Chainwheel Mechanism," showcasing his wide-ranging technical expertise.
-  
+  <br />
   In the 1980s, Mehdi served as a professor at Kerman University, holding key roles as Deputy for Scientific and Research Affairs and Head of the Mechanical Engineering Department at the Kerman Organization for Scientific and Industrial Research. Eventually, he returned to his beloved hometown of Yazd.
-  
+  <br />    
   In 1985, he married to Maryam, and after years of hopeful waiting, joyfully welcomed his first child, his son Morteza, in 1996 and his daughter, Mina, in 1999. His vigilant and proactive approach notably saved his son's life when local doctors were unable to diagnose a severe illness. Leveraging the early internet and with assistance from Johns Hopkins Hospital, he identified and treated his son's condition, reflecting his deep determination and resourcefulness.
-  
+  <br />
   In the early 2000s, he became the Director of Research and Development at the Consortium of Concrete Industries and Sarcheshmeh Copper Investment Group in Tehran until 2005. He then returned permanently to Yazd, continuously pursuing research and innovation despite limited support.
-  
+  <br />
   Mehdi’s visionary thinking often preceded his time. He proposed the Cloud Seeding Project in 1989, a concept later unsuccessfully executed by the government using ineffective methods. He consistently offered practical solutions for Tehran’s severe pollution problems, yet these recommendations went unheeded. After the 2010 Deepwater Horizon oil spill, he proposed technical solutions to British Petroleum (BP), asserting that his ideas inspired their successful interventions, although official recognition remained elusive.
-  
+  <br />
   Mehdi was also the mind behind the "TAEZZ" theory, scientifically unveiling the mystery behind the electrical energy source of lightning phenomena in thunderclouds. Based on this theory, he designed an innovative electrical power generator capable of providing safe, clean, free, and everlasting energy, potentially transformative for spacecraft, space labs, and future earth-based applications.
-  
+  <br />
   Beyond his scientific endeavors, Mehdi was a dedicated scholar and intellectual who devoured thousands of books on diverse subjects ranging from astrophysics to literature. He expressed himself poetically, revealing a sensitive and creative nature. Renowned for his kindness and generosity, he consistently sought to improve human life, particularly addressing environmental challenges faced by desert regions like Yazd.
-  
+  <br />
   During his university years, Mehdi annually met with Iran's late Shah, who recognized his potential and encouraged him to pursue nuclear sciences, anticipating the nation’s future needs for brilliant minds.
-  
+  <br />
   Mehdi passed away on July 5, 2024, after months of illness, leaving behind a legacy of innovation, integrity, and compassion. Although underappreciated in his lifetime, his inventions and ideals continue to inspire innovation and uplift communities, ensuring his memory remains cherished by family, friends, and the countless lives he touched.
   </div>;
 }
